@@ -1,0 +1,39 @@
+/* Shared light red feedback for incorrect choices, including disabled cards. */
+:root {
+  --answer-wrong-background: #ffe5e5;
+  --answer-wrong-border: #f0a5a5;
+  --answer-wrong-text: #943b3b;
+}
+#modalBody button.wrong,
+#modalBody button.wrong:hover,
+#modalBody button.wrong:disabled,
+#modalBody select.wrong,
+#modalBody .format-question label.wrong {
+  background: var(--answer-wrong-background) !important;
+  border-color: var(--answer-wrong-border) !important;
+  color: var(--answer-wrong-text) !important;
+  opacity: 1;
+}
+#modalBody button.wrong .choice-key {
+  background: #ffd2d2;
+  color: var(--answer-wrong-text);
+}
+#modalBody .quiz-feedback.bad,
+#modalBody .week-note.bad,
+#modalBody .citizen-feedback.bad,
+#modalBody .drop-result.bad {
+  background: var(--answer-wrong-background);
+  border: 1px solid var(--answer-wrong-border);
+  color: var(--answer-wrong-text);
+  border-radius: 14px;
+  padding: 14px 16px;
+}
+
+#modalBody .format-question label.wrong {
+  outline: 1px solid var(--answer-wrong-border);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+#modalBody .system-zone.wrong small {
+  color: var(--answer-wrong-text);
+}

@@ -1,0 +1,14 @@
+# Yerel ayarlar ve geliştirme dosyaları
+.DS_Store
+Thumbs.db
+desktop.ini
+node_modules/
+.env
+.env.*
+*.log
+.openai/
+.sites-runtime/
+dist/
+_site/
+outputs/
+work/
