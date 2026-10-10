@@ -1,21 +1,22 @@
 .pg-shot-lab{margin:14px 0;padding:14px;border:1px solid #426781;border-radius:14px;background:linear-gradient(120deg,#132c40,#18253e)}
 .pg-shot-lab[hidden],.pg-shot-meter[hidden]{display:none!important}
-.pg-shot-types{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-.pg-shot-types button{display:flex;gap:12px;align-items:center;min-height:62px;padding:11px 15px;border:1px solid #4b6580;border-radius:11px;background:#243750;color:#e9f5ff;text-align:left;cursor:pointer;font:inherit}
-.pg-shot-types svg{width:32px;height:32px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.pg-shot-types b{display:block;font-size:17px}.pg-shot-types small{display:block;color:#b1c6df;font-size:13px;margin-top:3px}
-.pg-shot-types button[aria-pressed=true]{border-color:#57efc8;background:#174738;box-shadow:inset 0 0 0 1px #57efc8;color:#baffdf}
-.pg-shot-types button[data-shot=power][aria-pressed=true]{border-color:#ffc46a;background:#453d2e;box-shadow:inset 0 0 0 1px #ffc46a;color:#ffdfa4}
-.pg-shot-types button[data-shot=chip][aria-pressed=true]{border-color:#c49bff;background:#382b52;box-shadow:inset 0 0 0 1px #c49bff;color:#e0c8ff}
-.pg-shot-types button:disabled,.pg-spin-row button:disabled{cursor:default;opacity:.58}.pg-shot-types button[aria-pressed=true]:disabled{opacity:.9}
-.pg-spin-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:12px;font-size:14px;color:#c1d8ea}
-.pg-spin-row>div{display:flex;gap:7px}.pg-spin-row button{min-height:44px;min-width:70px;padding:8px 13px;border:1px solid #4b6580;border-radius:9px;background:#243750;color:#e3f2fc;font:inherit;cursor:pointer}
-.pg-spin-row button[aria-pressed=true]{background:#194a42;color:#acffdf;border-color:#57efc8}
+.pg-swipe-guide{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:0;padding:0;list-style:none}
+.pg-swipe-guide li{display:flex;gap:11px;align-items:center;min-height:58px;padding:10px 13px;border:1px solid #4b6580;border-radius:11px;background:#243750;color:#e9f5ff;transition:background .15s,border-color .15s,color .15s}
+.pg-swipe-guide svg{width:30px;height:30px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.pg-swipe-guide b{display:block;font-size:16px}.pg-swipe-guide small{display:block;color:#b1c6df;font-size:13px;margin-top:3px}
+.pg-swipe-guide li.on{border-color:#57efc8;background:#174738;box-shadow:inset 0 0 0 1px #57efc8;color:#baffdf}
+.pg-swipe-guide li[data-kind=curve].on{border-color:#7fd8ff;background:#173c52;box-shadow:inset 0 0 0 1px #7fd8ff;color:#c9efff}
+.pg-swipe-guide li[data-kind=power].on{border-color:#ffc46a;background:#453d2e;box-shadow:inset 0 0 0 1px #ffc46a;color:#ffdfa4}
+.pg-swipe-guide li[data-kind=chip].on{border-color:#c49bff;background:#382b52;box-shadow:inset 0 0 0 1px #c49bff;color:#e0c8ff}
+.pg-swipe-guide li.on small{color:inherit;opacity:.85}
+.pg-shot-lab.keeper .pg-swipe-guide{opacity:.45}
+.game-wide .pg-swipe-guide{grid-template-columns:1fr;gap:8px}.game-wide .pg-swipe-guide li{min-height:48px;padding:8px 12px}
+@media(max-width:800px){.game-wide .pg-swipe-guide{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .pg-shot-lab p{font-size:14px;color:#d1e5f2;line-height:1.45;margin:11px 0 0}
-.pg-shot-meter{display:flex;align-items:center;gap:16px;margin-top:12px;font-size:14px;color:#ecfaff}.pg-shot-meter>span{min-width:160px;font-weight:700}
+.pg-shot-meter{display:flex;align-items:center;gap:16px;margin-top:12px;font-size:14px;color:#ecfaff}.pg-shot-meter>span{min-width:200px;font-weight:700}
 .pg-power-track{position:relative;flex:1;height:16px;background:#0a1b2c;border:1px solid #58758b;border-radius:20px;overflow:hidden}
 .pg-power-track i{position:absolute;inset:0 auto 0 0;display:block}.pg-power-sweet{background:#5becad40;border-inline:2px solid #64ffc2;z-index:2}.pg-power-fill{width:0;background:#80b8df;opacity:.8}
 .pg-host[data-game=penalty] .pg-controls{display:grid;grid-template-columns:1.7fr repeat(4,1fr);gap:9px}.pg-host[data-game=penalty] .pg-controls button{min-width:0;max-width:none;padding:10px 8px}
 .pg-host[data-game=penalty] [data-pg-key=up] b,.pg-host[data-game=penalty] [data-pg-key=down] b{font-size:23px}
-@media(max-width:650px){.pg-shot-lab{padding:10px;margin:10px 0}.pg-shot-types{gap:6px}.pg-shot-types button{display:block;padding:8px 5px;text-align:center;min-height:90px}.pg-shot-types svg{width:24px;height:24px}.pg-shot-types b{font-size:14px}.pg-shot-types small{font-size:11px;line-height:1.4;min-height:31px}.pg-spin-row{gap:8px;font-size:13px}.pg-spin-row button{min-width:0;padding:8px 10px;font-size:13px}.pg-shot-lab p{font-size:13px}.pg-shot-meter{display:block}.pg-power-track{margin-top:7px;height:14px}.pg-host[data-game=penalty] .pg-controls{grid-template-columns:1.6fr repeat(4,1fr);gap:5px}.pg-host[data-game=penalty] .pg-controls b{font-size:14px}.pg-host[data-game=penalty] .pg-controls small{font-size:11px}.pg-host[data-game=penalty] .pg-controls button{padding:8px 2px;min-height:68px}}
-@media(max-width:650px){.pg-host[data-game=penalty] .pg-frame:not(:has(.pg-overlay:not([hidden]))){min-height:0;aspect-ratio:16/9}.pg-host[data-game=penalty] .pg-hud{gap:8px}.pg-host[data-game=penalty] .pg-hud b{font-size:15px}.pg-host[data-game=penalty] .pg-hud span{font-size:12px}.pg-host[data-game=penalty] .pg-shot-types button{min-height:80px}.pg-host[data-game=penalty] .pg-shot-types small{min-height:26px}}
+@media(max-width:650px){.pg-shot-lab{padding:10px;margin:10px 0}.pg-swipe-guide{gap:6px}.pg-swipe-guide li{display:block;padding:8px 4px;text-align:center;min-height:0}.pg-swipe-guide svg{width:22px;height:22px}.pg-swipe-guide b{font-size:13px}.pg-swipe-guide small{font-size:11px;line-height:1.3}.pg-shot-lab p{font-size:13px}.pg-shot-meter{display:block}.pg-power-track{margin-top:7px;height:14px}.pg-host[data-game=penalty] .pg-controls{grid-template-columns:1.6fr repeat(4,1fr);gap:5px}.pg-host[data-game=penalty] .pg-controls b{font-size:14px}.pg-host[data-game=penalty] .pg-controls small{font-size:11px}.pg-host[data-game=penalty] .pg-controls button{padding:8px 2px;min-height:68px}}
+@media(max-width:650px){.pg-host[data-game=penalty] .pg-frame:not(:has(.pg-overlay:not([hidden]))){min-height:0;aspect-ratio:16/9}.pg-host[data-game=penalty] .pg-hud{gap:8px}.pg-host[data-game=penalty] .pg-hud b{font-size:15px}.pg-host[data-game=penalty] .pg-hud span{font-size:12px}}
