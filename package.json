@@ -2,7 +2,7 @@
   "name": "btoyun",
   "version": "1.0.0",
   "private": true,
-  "description": "Bilişim dersi etkinlikleri ve tarayıcı oyunları",
+  "description": "Bilişim dersi etkinlikleri",
   "type": "module",
   "scripts": {
     "start": "node tools/serve.mjs"

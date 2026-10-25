@@ -1,4 +1,0 @@
-Use case: stylized-concept
-Asset type: 1536x1024 landscape browser arcade balance-driving game environment BACKGROUND.
-Primary request: polished cinematic stylized 3D game backdrop, clean SIDE-VIEW camera suitable for a side scrolling driving game. A turquoise-blue dusk sky above a dramatic geometric rocky canyon, distant pine forest silhouettes, layered depth, warm orange sunlit cliff edges and subtle atmospheric mist. Crisp faceted low-poly rock formations with polished game-quality lighting. Scenic depth across the upper two-thirds, with the lower third OPEN, visually simple, dark navy and teal enough to support an overlaid physics roadway. Composition panoramic and readable for a school-friendly arcade game.
-Constraints: exact landscape canvas 1536x1024; no road or roadway, no truck or vehicle, no people or characters, no UI, text, logos, watermark or border.
