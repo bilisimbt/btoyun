@@ -117,13 +117,16 @@ function g77Finish(){const s=g77State;completeActivity(s.a.id);const other=s.a.i
  $('#g77Again').onclick=()=>g77Start(s.a);$('#g77Other').onclick=()=>openActivity(other);$('#g77Home').onclick=closeModal})}
 
 const beforeG77Open=openActivity;openActivity=function(id){const a=g77Games.find(x=>x.id===id);if(!a)return beforeG77Open(id);if(typeof algoStop==='function')algoStop();g77State?.cleanup?.();currentActivity=a;g77Start(a)};
-const beforeG77Render=render;render=function(){beforeG77Render();const done=loadStored('bilisimCompleted');
+const beforeG77Render=render;render=function(){const showWeek=typeof gradeFilter!=='undefined'&&gradeFilter==='7';
+ if(!showWeek&&g77Only){g77Only=false;$('#allWeeks')?.classList.add('on')}
+ const weekButton=$('#g77Week');if(weekButton){weekButton.hidden=!showWeek;weekButton.classList.toggle('on',showWeek&&g77Only)}
+ beforeG77Render();const done=loadStored('bilisimCompleted');
  if(g77Only)document.querySelectorAll('#grid .card').forEach(card=>{const b=card.querySelector('[data-play]');if(!b||!g77Games.some(a=>a.id===b.dataset.play))card.remove()});
  [...g77Games].reverse().forEach(a=>{const b=document.querySelector(`[data-play="${a.id}"]`);if(!b)return;const card=b.closest('.card'),visual=card.querySelector('.card-visual');visual.className='card-visual g77-art'+(a.id==='g77-algo'?' g77-art-data':'');visual.innerHTML=`<span class="card-number">7. SINIF · 7. HAFTA</span><span class="week-symbol" aria-hidden="true">${a.symbol}</span><strong>${esc(a.cover)}</strong>${done.includes(a.id)?'<span class="card-done">★ Tamamlandı</span>':''}`;if(!card.querySelector('.week-tag'))card.querySelector('h3').insertAdjacentHTML('beforebegin',`<span class="week-tag">26–30 Ekim · ${a.id==='g77-parcala'?'1. ders · Teknoloji ve Tasarım':'2. ders · Bilişim'}</span>`);$('#grid').prepend(card)});
  if(g77Only&&!$('#grid').children.length)$('#grid').innerHTML='<p class="empty">Bu seçimde oyun yok. Sınıf veya tür filtresini "Tümü" yap.</p>'};
-(function(){const bar=document.querySelector('.week-controls');if(!bar)return;(bar.querySelector('#g57Week')||bar.querySelector('span'))?.insertAdjacentHTML(bar.querySelector('#g57Week')?'afterend':'beforebegin','<button class="chip" id="g77Week">7. sınıf · 7. hafta</button>');
+(function(){const bar=document.querySelector('.week-controls');if(!bar)return;(bar.querySelector('#g57Week')||bar.querySelector('span'))?.insertAdjacentHTML(bar.querySelector('#g57Week')?'afterend':'beforebegin','<button class="chip" id="g77Week" hidden>7. sınıf · 7. hafta</button>');
  const off=()=>{if(!g77Only)return;g77Only=false;$('#g77Week').classList.remove('on');render()};
  $('#allWeeks')?.addEventListener('click',off);$('#fourthWeek')?.addEventListener('click',off);$('#g57Week')?.addEventListener('click',off);
- $('#g77Week').onclick=()=>{g77Only=true;if(typeof g57Only!=='undefined')g57Only=false;if(typeof weekOnly!=='undefined')weekOnly=false;activeFilter='all';if(typeof gradeFilter!=='undefined'){gradeFilter='all';const g=$('#gradeSelect');if(g)g.value='all'}document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('on',b.dataset.filter==='all'));bar.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on',c.id==='g77Week'));render()};})();
+ $('#g77Week').onclick=()=>{g77Only=true;if(typeof g57Only!=='undefined')g57Only=false;if(typeof weekOnly!=='undefined')weekOnly=false;activeFilter='all';if(typeof gradeFilter!=='undefined'){gradeFilter='7';const g=$('#gradeSelect');if(g)g.value='7'}document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('on',b.dataset.filter==='all'));bar.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on',c.id==='g77Week'));render()};})();
 document.getElementById('closeModal')?.addEventListener('click',()=>g77State?.cleanup?.());
 render();

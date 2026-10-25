@@ -1,7 +1,7 @@
 {
   "name": "BToyun GitHub paketi (oyunsuz)",
   "prepared_on": "2026-10-25",
-  "site_version": 25,
+  "site_version": 26,
   "source_commit": "7bcb1048b4b0aacb62ed529d3f8c37eb13b4e2d8",
   "hosting": "Static HTML / GitHub Pages",
   "files": {
@@ -27,7 +27,7 @@
     "assets/grade5-week7.css": "7f03c7b9d9ece85edf536cfe099f33a589f243272c49cca62f899fceece4a59a",
     "assets/grade5-week7.js": "ea9ad546ed5350d610c11d5b6f695093f472a59554ea0646cc7c5234c323a4da",
     "assets/grade7-week7.css": "984124adf962ae798d495db6cd008bc7226b19bf627bcf9c8e1e6579e186c300",
-    "assets/grade7-week7.js": "7f10e329eee850c47f48fcffefe32e7816c85bddfb4a92a8b0c78ac75948693a",
+    "assets/grade7-week7.js": "25226bbccbddfb55ac99676dc4378a88e21ceba759544e2afe15338beb2654c6",
     "assets/green-lab.css": "6a30ad6b226d7d42e499f39d4f7cc4a4566ad2d2aa575399b301043ce43b4fa4",
     "assets/green-lab.js": "3e6901c7913ef5818333519bd15fdcbfa81c4d41d6fe16e855f911118cb65181",
     "assets/hardware-week4.css": "738ede33b0769f9c36173cdcbb4f429ea42def22cc63da9bf9d1a4c267637324",
@@ -38,7 +38,7 @@
     "assets/systems.css": "1d4e75154a02d02901d14505d30a282f5b1a3ca4d05cb78e138663fb660a9774",
     "assets/systems.js": "17bdfc8cf54557af8654d171f7c7b4daeb88098043d275f03385b91eee2e8bb6",
     "assets/week4.js": "f095c14292d4e15aa6881840ff74165449613640751a66142737265557906220",
-    "index.html": "89973b6bdcea81c92e851debef63620fbbf97f74fe3da4c9fcc72fe52cab4954",
+    "index.html": "ec5fa26997502c0f90ffc75741c9743f394727f6de5e6a0250e55e8301eaf936",
     "package.json": "45023829ba631339628b438f5d03e0b54fd1d9ad8845e00095ce6c39fae31d78",
     "tools/serve.mjs": "665835806fcc7b1f84807f05adc9b5c2795267ca57c80ecdd2139c59761e0927"
   }
