@@ -1,7 +1,7 @@
 {
   "name": "BToyun GitHub paketi (oyunsuz)",
-  "prepared_on": "2026-10-25",
-  "site_version": 28,
+  "prepared_on": "2026-10-26",
+  "site_version": 29,
   "source_commit": "7bcb1048b4b0aacb62ed529d3f8c37eb13b4e2d8",
   "hosting": "Static HTML / GitHub Pages",
   "files": {
@@ -38,15 +38,17 @@
     "assets/systems.css": "1d4e75154a02d02901d14505d30a282f5b1a3ca4d05cb78e138663fb660a9774",
     "assets/systems.js": "17bdfc8cf54557af8654d171f7c7b4daeb88098043d275f03385b91eee2e8bb6",
     "assets/week4.js": "f095c14292d4e15aa6881840ff74165449613640751a66142737265557906220",
-    "index.html": "159bbc352a21e670f4511a04ac8c8c53cfa6e6d51ccc18935e70395a0f0fbaa7",
+    "index.html": "6f72723140ce694cc8c384c91a215566634e525110e40ab25925abc5b74fa90e",
     "package.json": "45023829ba631339628b438f5d03e0b54fd1d9ad8845e00095ce6c39fae31d78",
     "tools/serve.mjs": "665835806fcc7b1f84807f05adc9b5c2795267ca57c80ecdd2139c59761e0927",
-    "assets/grade6-materials.js": "73fdc5fbb05f12a8203a7aee9969d5c9e6c034544c96ecebce112391b362ef3e",
+    "assets/grade6-materials.js": "0622acdfad7d24b7bf6529ceb49fbd1eac3e2375f74956dde8ce588e097bf286",
     "assets/grade6-materials.css": "7348fd045ebfed4336fa2bcaeb4e344889b838a1e2d2636f889c09ede36e5824",
     "assets/materials/grade6/deniz-dalgalari.mp4": "636c09258a4abe5da9bc0ea126b34d83d0497387586c2edb6271c0362c8ea1f8",
     "assets/materials/grade6/orman-1.mp4": "f225f4a325134a1494951a03556f6a4e377dcc65cb3b7e45ae67337086d6b0ef",
     "assets/materials/grade6/orman-2.mp4": "27efcd90683a80a0573903b9095985600c965ba9b2a8a91f588a92a6a23c259e",
     "assets/materials/grade6/deniz-dalga-sesi.mp3": "91f56535a0a6539f26a22ddbc80135ea766ffb5ecf615cb8e1784f91e88658ca",
-    "assets/materials/grade6/kus-sesi.mp3": "0ecad0dbae6b12379456e5b4178ea3ae31402917cd3a5bdd3a961e4e2c1370fc"
+    "assets/materials/grade6/kus-sesi.mp3": "0ecad0dbae6b12379456e5b4178ea3ae31402917cd3a5bdd3a961e4e2c1370fc",
+    "assets/materials/grade6/ormanda-yurume.mp4": "a0fa7f60c9265b5f2d5e0ff065cc05529837858074979424cfd5c958a8a635e4",
+    "assets/materials/grade6/dogada-yurume-sesi.mp3": "711d9f0aeffb4738706e0c375ab99280d53bc6adad9ea10622cc67edbb72f559"
   }
 }
