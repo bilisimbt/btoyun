@@ -104,10 +104,10 @@ function printEnergy(blank){printContent(`<h1>Haftalık Enerji Kullanımı</h1><
 
 // Reusable matching editor extends the existing teacher controls.
 const originalTeacherPanel=teacherPanel,originalFields=renderTypeFields,originalSave=saveCustom;
-teacherPanel=function(){originalTeacherPanel();$('#newType').insertAdjacentHTML('beforeend','<option value="match">Kavram eşleştirme</option>')};
+teacherPanel=function(){if(!teacherAreaEnabled)return;originalTeacherPanel();$('#newType').insertAdjacentHTML('beforeend','<option value="match">Kavram eşleştirme</option>')};
 renderTypeFields=function(){if($('#newType').value!=='match')return originalFields();$('#typeFields').innerHTML='<div class="field"><label for="newPairs">Her satıra bir kavram | açıklama çifti yaz</label><textarea id="newPairs" rows="8" placeholder="Hücre | Satır ve sütunun kesişimi\nSatır | Yatay hücre dizisi"></textarea><small>En az 2, en çok 40 çift. Oyun bunları dörderli turlara ayırır.</small></div>'};
 saveCustom=function(){if($('#newType').value!=='match')return originalSave();const title=$('#newTitle').value.trim(),lines=$('#newPairs').value.split('\n').filter(x=>x.trim()),pairs=lines.map(x=>x.split('|').map(y=>y.trim()));if(!title||pairs.length<2||pairs.length>40||pairs.some(p=>p.length!==2||!p[0]||!p[1]))return showToast('Başlık ve 2–40 geçerli kavram | açıklama çifti gir.');custom.push({id:'custom-'+Date.now(),title,description:$('#newDesc').value.trim(),type:'match',label:'Kavram eşleştirme',duration:'20 dk',group:'Grup oyunu',pairs});persist();render();teacherPanel();showToast('Eşleştirme oyunu kaydedildi.')};
-$('#teacherMode').onclick=teacherPanel;
+$('#teacherMode').onclick=teacherAreaEnabled?teacherPanel:null;
 document.querySelector('.hero .eyebrow').textContent='5. ve 6. sınıf · Bilişim oyun atölyesi';
 document.querySelector('.hero-float b').innerHTML='Görevleri tamamla,<br>keşif rozetlerini topla!';
 document.querySelector('.hero h1').innerHTML='Oyna. Keşfet.<br>Birlikte öğren.';
