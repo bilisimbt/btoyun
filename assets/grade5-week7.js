@@ -3,8 +3,8 @@
 // Game 1 reviews BTY.5.1.5 a) from week 6 (Etkinlik 20 Mini Oyun Seti). Game 2 covers this week's BTY.5.1.5 b) lesson
 // (Etkinlik 19 Veri Boyutu Merdiveni, depolama birimleri, Etkinlik 22 işletim sistemi, Etkinlik 23 sorun giderme).
 const g57Games=[
- {id:'g57-parts',title:'Parça Avcısı',grade:5,type:'week7',label:'7. hafta · Sürükle-bırak + 6 soru',duration:'20 dk',group:'Bireysel / ikili',description:'Kartları doğru kutuya taşı: donanım mı yazılım mı, iç mi dış mı, giriş mi çıkış mı? Sonra giderek zorlaşan 6 soruyu çöz.',symbol:'🧩',cover:'Kartı yerine taşı',outcome:'Geçen haftanın tekrarı · BTY.5.1.5 a) Bilgisayar sistemlerinin temel bileşenlerini belirler. Kılavuz Etkinlik 20 (s. 51) ve s. 47.'},
- {id:'g57-data',title:'Veri Merdiveni ve Depolama',grade:5,type:'week7',label:'7. hafta · Sırala + eşleştir + 7 soru',duration:'20 dk',group:'Bireysel / ikili',description:'Veri birimlerini küçükten büyüğe diz, depolama birimini doğru durumla eşleştir, sonra giderek zorlaşan 7 soruyu çöz.',symbol:'🪜',cover:'Veriyi ölç, doğru yerde sakla',outcome:'Bu haftanın konusu · BTY.5.1.5 b) Bilgisayar sistemlerinin temel bileşenleri arasındaki ilişkileri belirler. Kılavuz Etkinlik 19 Veri Boyutu Merdiveni (s. 50), depolama birimleri (s. 47), Etkinlik 22 İşletim Sistemi (s. 53), Etkinlik 23 Sorun Giderme (s. 54).'}
+ {id:'g57-parts',title:'Parça Avcısı',grade:5,type:'week7',label:'7. hafta · Sürükle-bırak + 5 soru',duration:'20 dk',group:'Bireysel / ikili',description:'Kartları doğru kutuya taşı: donanım mı yazılım mı, iç mi dış mı, giriş mi çıkış mı? Sonra giderek zorlaşan 5 soruyu çöz.',symbol:'🧩',cover:'Kartı yerine taşı',outcome:'Geçen haftanın tekrarı · BTY.5.1.5 a) Bilgisayar sistemlerinin temel bileşenlerini belirler. Kılavuz Etkinlik 20 (s. 51) ve s. 47.'},
+ {id:'g57-data',title:'Veri Merdiveni ve Depolama',grade:5,type:'week7',label:'7. hafta · Sırala + eşleştir',duration:'20 dk',group:'Bireysel / ikili',description:'Veri birimlerini küçükten büyüğe diz, depolama birimini doğru durumla eşleştir.',symbol:'🪜',cover:'Veriyi ölç, doğru yerde sakla',outcome:'Bu haftanın konusu · BTY.5.1.5 b) Bilgisayar sistemlerinin temel bileşenleri arasındaki ilişkileri belirler. Kılavuz Etkinlik 19 Veri Boyutu Merdiveni (s. 50), depolama birimleri (s. 47), Etkinlik 22 İşletim Sistemi (s. 53), Etkinlik 23 Sorun Giderme (s. 54).'}
 ];
 defaultActivities.push(...g57Games);
 
@@ -25,7 +25,6 @@ const g57Rounds=[
 const g57PartQuestions=[
  {icon:'💿',q:'Hangisi bir yazılımdır?',options:['Fare','Kelime işlemci','RAM bellek'],answer:1,why:'Kelime işlemci bir programdır. Fare ve RAM bellek dokunabildiğimiz parçalardır.'},
  {icon:'📦',q:'Hangi ikilinin ikisi de iç donanımdır?',options:['Ekran ve işlemci','Klavye ve anakart','İşlemci ve RAM bellek'],answer:2,why:'İşlemci ve RAM bellek kasanın içindedir. Ekran ve klavye kasanın dışındadır.'},
- {icon:'🎙️',scene:'Ayşe mikrofonla sesini kaydetti, sonra kaydı kulaklıkla dinledi.',q:'Ayşe hangi birimleri hangi sırayla kullandı?',options:['Önce çıkış, sonra giriş birimi','Önce giriş, sonra çıkış birimi','İkisi de giriş birimi'],answer:1,why:'Mikrofon sesi bilgisayara gönderir (giriş). Kulaklık sesi bize duyurur (çıkış).'},
  {icon:'🎮',scene:'Can: "Bilgisayarıma yeni bir oyun yükledim, artık bilgisayarımda daha çok donanım var."',q:'Can\'ın cümlesi neden yanlıştır?',options:['Oyun bir yazılımdır, yeni bir parça takılmamıştır','Oyun bir donanımdır','Oyun yüklemek kasaya yeni bir kart ekler'],answer:0,why:'Program yüklemek yazılım eklemektir. Donanım eklemek için yeni bir parça takmak gerekir.'},
  {icon:'⌨️',scene:'Bilgisayar açık, ekran çalışıyor. Ama klavyede bir tuşa basınca ekranda hiçbir harf çıkmıyor.',q:'Önce neyi kontrol etmek en mantıklıdır?',options:['Hoparlörün sesini','Klavyenin bilgisayara bağlı olup olmadığını','Yazıcının kâğıdını'],answer:1,why:'Ekran çalışıyorsa sorun büyük olasılıkla giriş birimi olan klavyededir. Önce bağlantısına bakarız.'},
  {icon:'📱',scene:'Tabletteki çizim programında parmağınla bir kalp çizdin ve kalp hemen ekranda göründü.',q:'Bu işte hangileri birlikte çalıştı?',options:['Yalnızca dokunmatik ekran','Yalnızca çizim programı','Dokunmatik ekran, işlemci ve çizim programı'],answer:2,why:'Dokunmatik ekran dokunuşu alır ve görüntüyü gösterir, işlemci çalıştırır, çizim programı (yazılım) ne yapılacağını söyler.'}
@@ -35,33 +34,22 @@ const g57PartQuestions=[
 const g57Ladder=[['bit','En küçük veri birimi'],['bayt','8 bit'],['kilobayt (KB)',''],['megabayt (MB)','Bir fotoğraf ≈ birkaç MB'],['gigabayt (GB)','Bir film ≈ birkaç GB'],['terabayt (TB)','En büyük birim']];
 const g57StoragePairs=[
  ['🔌','USB bellek','Ödevimi cebimde taşıyıp okuldaki bilgisayarda açmak istiyorum.'],
- ['☁️','Bulut depolama','Dosyama internete bağlı her yerden ulaşmak istiyorum.'],
- ['⚡','SSD','Programların ve dosyaların bilgisayarda çok hızlı açılmasını istiyorum.'],
  ['💽','Sabit disk (HDD)','Çok sayıda dosyayı bilgisayarın içinde uzun süre saklamak istiyorum.'],
  ['🪟','İşletim sistemi','Donanımı ve programları yöneten, bilgisayar açılınca ilk çalışan yazılım lazım.']
-];
-const g57DataQuestions=[
- {icon:'🪜',q:'Hangisi en büyük veri birimidir?',options:['Megabayt (MB)','Kilobayt (KB)','Gigabayt (GB)'],answer:2,why:'Küçükten büyüğe sıra: bit, bayt, KB, MB, GB, TB. Bu üçünün en büyüğü GB\'dir.'},
- {icon:'🔢',q:'1 bayt kaç bitten oluşur?',options:['8 bit','2 bit','100 bit'],answer:0,why:'8 bit bir araya gelince 1 bayt olur.'},
- {icon:'🎬',scene:'Elif\'in telefonunda 3 MB\'lık bir fotoğraf ve 2 GB\'lık bir film var.',q:'Hangisi doğrudur?',options:['Fotoğraf filmden daha çok yer kaplar','Film fotoğraftan daha çok yer kaplar','İkisi aynı yer kaplar'],answer:1,why:'GB, MB\'den büyük bir birimdir. Film fotoğraftan çok daha fazla yer kaplar.'},
- {icon:'🏫',scene:'Okuldaki bilgisayarda internet çalışmıyor. Evde hazırladığın sunumu okulda açman gerekiyor.',q:'Sunumu nereye kaydetmek en güvenlidir?',options:['Buluta','USB belleğe','Hiçbir yere kaydetmem, okulda yeniden yaparım'],answer:1,why:'Buluttaki dosyaya ulaşmak için internet gerekir. USB bellek internetsiz de çalışır.'},
- {icon:'🪟',scene:'Klavyede "A" tuşuna bastın ve harf hemen ekranda göründü.',q:'Klavye ile ekranın birlikte çalışmasını hangi yazılım düzenler?',options:['İşletim sistemi','Resim programı','Oyun programı'],answer:0,why:'İşletim sistemi donanımı yönetir: klavyeden gelen harfi ekrana gönderir.'},
- {icon:'🖨️',q:'Yazıcı çalışmıyor. Sorun giderme adımlarının doğru sırası hangisidir?',options:['Sürücü → güç → kablo','Kablo → güç → sürücü','Hemen yeni yazıcı almak'],answer:1,why:'Önce kolay ve fiziksel olanlara bakarız: kablo takılı mı, güç açık mı? Sonra yazılım tarafına, yani sürücüye bakarız.'},
- {icon:'⚡',scene:'İki bilgisayarın her şeyi aynı. Tek fark: birinde SSD, ötekinde sabit disk (HDD) var. İkisinde de aynı oyunu açıyorsun.',q:'Ne olmasını beklersin?',options:['Sabit diskli bilgisayar oyunu daha hızlı açar','Depolama birimi açılış hızını hiç etkilemez','SSD\'li bilgisayar oyunu genellikle daha hızlı açar'],answer:2,why:'Oyun depolama biriminden okunur. SSD sabit diskten daha hızlı olduğu için oyun daha çabuk açılır.'}
 ];
 
 let g57State,g57Only=false;
 const g57Reduced=window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 const g57Colors=['#1565c0','#0f766e','#7c3aed','#c2410c','#be185d'];
 const g57Shuffle=list=>{const a=[...list];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
-function g57Teacher(){return `<details class="g57-teacher"><summary>Öğretmen notu</summary><p>${esc(g57State.a.outcome)}</p><p>Sorular kolaydan zora sıralıdır. İkili çalışmada sürücü kartları taşır, yönlendirici kartı ve soruyu sesli okur. Her bölümün sonunda roller değişir.</p></details>`}
+function g57Teacher(){return `<details class="g57-teacher"><summary>Öğretmen notu</summary><p>${esc(g57State.a.outcome)}</p><p>${g57State.a.id==='g57-parts'?'Sorular kolaydan zora sıralıdır. ':''} İkili çalışmada sürücü kartları taşır, yönlendirici kartı ve soruyu sesli okur. Her bölümün sonunda roller değişir.</p></details>`}
 function g57Hud(){const s=g57State,pct=Math.round(s.step/s.steps.length*100);return `<div class="g57-hud"><span>5. SINIF · 7. HAFTA</span><b>Bölüm ${s.step+1} / ${s.steps.length}</b><span id="g57Stars">★ ${s.stars} yıldız</span></div><div class="g57-bar" data-pct="${pct}"><i style="width:${s.barFrom??0}%"></i></div>`}
 
 // Every screen change fades the old content out and slides the new one in.
 function g57Screen(html){const s=g57State,body=$('#modalBody'),put=()=>{body.innerHTML=`<div class="g57-screen">${html}</div>`;$('.dialog').scrollTop=0;const bar=body.querySelector('.g57-bar');if(bar)requestAnimationFrame(()=>requestAnimationFrame(()=>{bar.querySelector('i').style.width=bar.dataset.pct+'%';s.barFrom=Number(bar.dataset.pct)}))};
  const old=body.querySelector('.g57-screen');if(!old||g57Reduced){put();return Promise.resolve()}old.classList.add('is-leaving');return new Promise(r=>setTimeout(()=>{put();r()},180))}
 function g57AddStar(){const s=g57State;s.stars++;const el=$('#g57Stars');if(!el)return;el.textContent=`★ ${s.stars} yıldız`;el.classList.remove('is-bump');void el.offsetWidth;el.classList.add('is-bump')}
-function g57Start(a){const steps=a.id==='g57-parts'?[...g57Rounds.map((_,i)=>()=>g57Sort(i)),()=>g57Quiz(g57PartQuestions)]:[g57LadderStep,()=>g57Match(g57StoragePairs),()=>g57Quiz(g57DataQuestions)];g57State={a,stars:0,mistakes:0,step:0,steps,barFrom:0};openModal(a.title,'5. sınıf · 7. hafta · '+a.duration,'');g57Intro()}
+function g57Start(a){const steps=a.id==='g57-parts'?[...g57Rounds.map((_,i)=>()=>g57Sort(i)),()=>g57Quiz(g57PartQuestions)]:[g57LadderStep,()=>g57Match(g57StoragePairs)];g57State={a,stars:0,mistakes:0,step:0,steps,barFrom:0};openModal(a.title,'5. sınıf · 7. hafta · '+a.duration,'');g57Intro()}
 function g57NextStep(){const s=g57State;s.step++;if(s.step===s.steps.length)return g57Finish();s.steps[s.step]()}
 function g57Intro(){const a=g57State.a;g57Screen(`<div class="g57-intro g57-intro-big"><span aria-hidden="true">${a.symbol}</span><div><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p></div></div><div class="g57-actions"><button class="btn primary" id="g57Go">Başla →</button></div>${g57Teacher()}`).then(()=>{$('#g57Go').onclick=()=>g57State.steps[0]();$('#g57Go').focus()})}
 function g57Say(text,bad){const f=$('#g57Feedback');if(!f)return;f.textContent=text;f.classList.toggle('bad',!!bad);f.classList.remove('is-pop');void f.offsetWidth;f.classList.add('is-pop')}
