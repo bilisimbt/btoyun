@@ -2,6 +2,7 @@
 
 (() => {
   const materials = [
+    { grade: '7', week: null, title: 'Teknoloji ve Tasarım Temelleri', description: 'Ders sunumu', format: 'PPTX', bytes: 14817431, path: 'assets/presentations/grade7/teknoloji-ve-tasarim-temelleri.pptx', download: 'Teknoloji_ve_Tasarım_Temelleri.pptx' },
     { grade: '6', week: 8, title: 'Video Planlama ve Senaryo', description: 'Ders sunumu', format: 'PPTX', bytes: 15900998, path: 'assets/presentations/grade6/week8/video-planlama-ve-senaryo.pptx?v=2', download: 'Video_Planlama_ve_Senaryo.pptx' },
     { grade: '6', week: 8, title: 'Video Senaryosu Örnekleri', description: 'Senaryo çalışmaları · 4 sayfa', format: 'PDF', bytes: 4039455, path: 'assets/presentations/grade6/week8/video-senaryosu-ornekleri.pdf', download: 'Video_Senaryosu_Ornekleri.pdf' }
   ];
@@ -27,7 +28,7 @@
         <span class="presentations-count">${files.length} dosya</span>
       </div>
       ${files.length ? weeks.map(week => `
-        <div class="presentations-week"><h3>${week}. hafta</h3>
+        <div class="presentations-week"><h3>${week === null ? 'Ders sunumları' : week + '. hafta'}</h3>
           <div class="presentations-grid">${files.filter(file => file.week === week).map(file => `
             <article class="presentation-card">
               <span class="presentation-format">${file.format}</span>
