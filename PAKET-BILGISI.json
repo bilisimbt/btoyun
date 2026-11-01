@@ -1,8 +1,8 @@
 {
   "name": "BToyun GitHub paketi (oyunsuz)",
   "prepared_on": "2026-11-01",
-  "site_version": 30,
-  "source_commit": "ef70e11be360c83813f74464143e89e9be247472",
+  "site_version": 31,
+  "source_commit": "5abe638dadb690685f02ba8e817dc1f8dcb4a78d",
   "hosting": "Static HTML / GitHub Pages",
   "files": {
     ".github/workflows/pages.yml": "7c2e65b1995e57e400a1240f1c3109971df9462fe50b06a8cefe4e48d6a97765",
@@ -38,7 +38,7 @@
     "assets/systems.css": "1d4e75154a02d02901d14505d30a282f5b1a3ca4d05cb78e138663fb660a9774",
     "assets/systems.js": "17bdfc8cf54557af8654d171f7c7b4daeb88098043d275f03385b91eee2e8bb6",
     "assets/week4.js": "f095c14292d4e15aa6881840ff74165449613640751a66142737265557906220",
-    "index.html": "b3b932fc84a3fa471c8ac3ef84d98941772da1b4248d845961f4000c9c42051b",
+    "index.html": "f7714df8f8098b329cd236a39d6a1a22a6eefd582eca9bc181213e27dbdfca69",
     "package.json": "45023829ba631339628b438f5d03e0b54fd1d9ad8845e00095ce6c39fae31d78",
     "tools/serve.mjs": "665835806fcc7b1f84807f05adc9b5c2795267ca57c80ecdd2139c59761e0927",
     "assets/grade6-materials.js": "0622acdfad7d24b7bf6529ceb49fbd1eac3e2375f74956dde8ce588e097bf286",
@@ -50,9 +50,9 @@
     "assets/materials/grade6/kus-sesi.mp3": "0ecad0dbae6b12379456e5b4178ea3ae31402917cd3a5bdd3a961e4e2c1370fc",
     "assets/materials/grade6/ormanda-yurume.mp4": "a0fa7f60c9265b5f2d5e0ff065cc05529837858074979424cfd5c958a8a635e4",
     "assets/materials/grade6/dogada-yurume-sesi.mp3": "711d9f0aeffb4738706e0c375ab99280d53bc6adad9ea10622cc67edbb72f559",
-    "assets/presentations.js": "55497b6e9b8dca3fc58b919b1912efe8cba118bb3c825d456ff42db31e35f502",
+    "assets/presentations.js": "0652d60349cb891059ef8486c46c4fc4e5b0aba036deeba54e4565f769c2bb71",
     "assets/presentations.css": "81cd8a3ac1a2c266afb17f221a36225c8301133bcfd9bac6d666da118cb3a0db",
-    "assets/presentations/grade6/week8/video-planlama-ve-senaryo.pptx": "aa02efbf1cebce39282e0ff9a2a318dce1ab72744136af08fe17000fb3f31398",
+    "assets/presentations/grade6/week8/video-planlama-ve-senaryo.pptx": "64974080660fdeb0af50f4b2ff251ed172eda0743e5a419d53b1dbdacc7db816",
     "assets/presentations/grade6/week8/video-senaryosu-ornekleri.pdf": "dc6ee1582024d7c13bf23296b294b21b6ba303d17f305e6c48b19c78547f9b61"
   }
 }

@@ -2,7 +2,7 @@
 
 (() => {
   const materials = [
-    { grade: '6', week: 8, title: 'Video Planlama ve Senaryo', description: 'Ders sunumu', format: 'PPTX', bytes: 15900965, path: 'assets/presentations/grade6/week8/video-planlama-ve-senaryo.pptx', download: 'Video_Planlama_ve_Senaryo.pptx' },
+    { grade: '6', week: 8, title: 'Video Planlama ve Senaryo', description: 'Ders sunumu', format: 'PPTX', bytes: 15900998, path: 'assets/presentations/grade6/week8/video-planlama-ve-senaryo.pptx?v=2', download: 'Video_Planlama_ve_Senaryo.pptx' },
     { grade: '6', week: 8, title: 'Video Senaryosu Örnekleri', description: 'Senaryo çalışmaları · 4 sayfa', format: 'PDF', bytes: 4039455, path: 'assets/presentations/grade6/week8/video-senaryosu-ornekleri.pdf', download: 'Video_Senaryosu_Ornekleri.pdf' }
   ];
   const board = document.createElement('section');
