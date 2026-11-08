@@ -18,6 +18,7 @@
       <div><span class="materials6-label">6. SINIF</span><h2 id="grade6MaterialsTitle">9. hafta video materyalleri</h2><p>Etkinlik videolarını indir.</p></div>
       <span class="materials6-count">${files.length} video</span>
     </div>
+    <blockquote class="materials6-quote">“İmanın yetmiş küsur şubesi vardır. Bunların en üstünü ‘Lâ ilâhe illallah’ sözüdür. En alt derecesi ise yoldaki eziyet veren şeyleri kaldırmaktır. Hayâ da imanın bir şubesidir.”</blockquote>
     <div class="materials6-grid">${files.map(file => `
       <article class="materials6-card">
         <span class="materials6-icon" aria-hidden="true">${file.type === 'Video' ? '🎬' : '🎧'}</span>
