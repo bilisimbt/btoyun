@@ -38,7 +38,11 @@
   const previousRender = render;
   render = function () {
     previousRender();
-    board.hidden = gradeFilter !== '8';
+    board.hidden = !['7', '8'].includes(gradeFilter);
+    if (!board.hidden) {
+      board.querySelector('.presentations-label').textContent = `${gradeFilter}. SINIF`;
+      board.querySelector('#grade8MaterialsTitle').textContent = gradeFilter === '7' ? '7. sınıf · 9. hafta materyalleri' : '8. sınıf materyalleri';
+    }
   };
   render();
 })();

@@ -6,7 +6,8 @@
     { title: '2. Sahne', path: 'assets/materials/grade6/week9/2-sahne.mp4', download: '2.sahne.mp4', type: 'Video', format: 'MP4', bytes: 1355113 },
     { title: '3. Sahne', path: 'assets/materials/grade6/week9/3-sahne.mp4', download: '3.sahne.mp4', type: 'Video', format: 'MP4', bytes: 1657451 },
     { title: '4. Sahne', path: 'assets/materials/grade6/week9/4-sahne.mp4', download: '4.sahne.mp4', type: 'Video', format: 'MP4', bytes: 1705172 },
-    { title: '5. Sahne', path: 'assets/materials/grade6/week9/5-sahne.mp4', download: '5.sahne.mp4', type: 'Video', format: 'MP4', bytes: 1461806 }
+    { title: '5. Sahne', path: 'assets/materials/grade6/week9/5-sahne.mp4', download: '5.sahne.mp4', type: 'Video', format: 'MP4', bytes: 1461806 },
+    { title: 'Okul Yolunda Bir İyilik', path: 'assets/materials/grade6/week9/okul-yolunda-bir-iyilik.mp4', download: 'Okul Yolunda Bir İyilik - Hadisli.mp4', type: 'Video', format: 'MP4', bytes: 6787602 }
   ];
   const section = document.createElement('section');
   section.id = 'grade6Materials';
